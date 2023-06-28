@@ -1,12 +1,20 @@
 extends Node
 
 # call audio manager singletons
-# example: manager.play(SOUND_FILE_PATH, DECIBEL_VOLUME)
+# example: AudioManager.play(load("res://assets/music/music.wav"), "Music", 0)
 
-# MusicManager.play(SOUND_FILE_PATH, -35)
-# SfxManager.play(SOUND_FILE_PATH, -35)
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	AudioManager.play(load("res://assets/music/music.wav"), "Music", 0)
 
+
+func _on_bubble_pressed():
+	AudioManager.play(load("res://assets/sfx/bubble.wav"), "SFX", 0)
+
+
+func _on_beep_pressed():
+	AudioManager.play(load("res://assets/sfx/beep.wav"), "SFX", 0)
+
+
+func _on_zap_pressed():
+	AudioManager.play(load("res://assets/sfx/zap.wav"), "SFX", 0)
