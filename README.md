@@ -1,6 +1,6 @@
 # AudioManager for Godot 4+
  
-Add each audio manager to your project autoload settings like so:
+Add the audio manager to your project autoload settings like so:
 
 ![Autoload Settings](https://github.com/nicoviarnes/AudioManager/blob/main/autoload_screenshot.PNG)
 
