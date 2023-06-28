@@ -1,12 +1,12 @@
 2a60927148abd1d33b818b535e306557
-::res://::1687996569
+::res://::1687996772
 audio_bus_screenshot.PNG::CompressedTexture2D::1988556567376330313::1687996313::1687996315::1::::<><>::
 audio_examples.gd::GDScript::-1::1687996340::0::1::::<>Node<>::
-autoload_screenshot.PNG::CompressedTexture2D::4907493159640731922::1687996679::1687996681::1::::<><>::
+autoload_screenshot1.PNG::CompressedTexture2D::4907493159640731922::1687996679::1687996772::1::::<><>::
 default_bus_layout.tres::AudioBusLayout::709723035980131482::1687990555::0::1::::<><>::
 icon.svg::CompressedTexture2D::3489434362347517190::1687965150::1687965155::1::::<><>::
-main.tscn::PackedScene::6860969155877588151::1687996569::0::1::::<><>::res://audio_examples.gd
-README.md::TextFile::-1::1687996569::0::1::::<><>::
+main.tscn::PackedScene::6860969155877588151::1687996691::0::1::::<><>::res://audio_examples.gd
+README.md::TextFile::-1::1687996691::0::1::::<><>::
 ::res://assets/::1687990351
 ::res://assets/music/::1687990450
 music.wav::AudioStreamWAV::594222290845109907::1687990268::1687990450::1::::<><>::

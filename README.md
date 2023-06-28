@@ -2,7 +2,7 @@
  
 Add the audio manager to your project autoload settings like so:
 
-![Autoload Settings](https://github.com/nicoviarnes/AudioManager/blob/main/autoload_screenshot.PNG)
+![Autoload Settings](https://github.com/nicoviarnes/AudioManager/blob/main/autoload_screenshot1.PNG)
 
 Create as many audio busses as you want and name them something logical:
 	
