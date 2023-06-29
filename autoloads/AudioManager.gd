@@ -33,5 +33,5 @@ func _process(_delta: float) -> void:
 
 #used for setting the bus volume eg. settings page with volume slider
 func set_bus_volume(bus : String, volume : int) -> void:
-	var BUS = AudioServer.get_bus_index(bus)
-	AudioServer.set_bus_volume_db(BUS, volume)
+	var bus_index = AudioServer.get_bus_index(bus)
+	AudioServer.set_bus_volume_db(bus_index, volume)
