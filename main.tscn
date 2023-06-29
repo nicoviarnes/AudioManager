@@ -1,33 +1,46 @@
-[gd_scene load_steps=2 format=3 uid="uid://c40rfoq2o4ry2"]
+[gd_scene load_steps=3 format=3 uid="uid://c40rfoq2o4ry2"]
 
 [ext_resource type="Script" path="res://audio_examples.gd" id="1_lf11a"]
+[ext_resource type="Script" path="res://VolumeSlider.gd" id="2_5xpna"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_lf11a")
 
 [node name="Beep" type="Button" parent="."]
-offset_left = 572.0
-offset_top = 260.0
-offset_right = 651.0
-offset_bottom = 314.0
+offset_left = 578.0
+offset_top = 478.0
+offset_right = 657.0
+offset_bottom = 532.0
 text = "beep"
 
 [node name="Bubble" type="Button" parent="."]
-offset_left = 571.0
-offset_top = 176.0
-offset_right = 650.0
-offset_bottom = 230.0
+offset_left = 349.0
+offset_top = 481.0
+offset_right = 428.0
+offset_bottom = 535.0
 text = "bubble"
 
 [node name="Zap" type="Button" parent="."]
-offset_left = 571.0
-offset_top = 345.0
-offset_right = 650.0
-offset_bottom = 399.0
+offset_left = 469.0
+offset_top = 479.0
+offset_right = 548.0
+offset_bottom = 533.0
 size_flags_horizontal = 4
 text = "zap
 "
 
+[node name="VolumeSlider" type="HSlider" parent="."]
+offset_left = 462.0
+offset_top = 260.0
+offset_right = 760.0
+offset_bottom = 276.0
+max_value = 1.0
+step = 0.05
+value = 1.0
+script = ExtResource("2_5xpna")
+bus = "Master"
+
 [connection signal="pressed" from="Beep" to="." method="_on_beep_pressed"]
 [connection signal="pressed" from="Bubble" to="." method="_on_bubble_pressed"]
 [connection signal="pressed" from="Zap" to="." method="_on_zap_pressed"]
+[connection signal="drag_ended" from="VolumeSlider" to="VolumeSlider" method="_on_drag_ended"]
