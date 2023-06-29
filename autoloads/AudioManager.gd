@@ -24,11 +24,11 @@ func _process(_delta: float) -> void:
 	if queue.is_empty() or available.is_empty(): # Early return strategy
 		return
 	var track = queue.pop_front()
-	var player = available.pop_front() # Create a reference to the AudioStreamPlayer we're working with
-	player.stream = track.sound
-	player.bus = track.bus
-	player.volume_db = track.volume
-	player.play()
+	var audio_player = available.pop_front() # Create a reference to the AudioStreamPlayer we're working with
+	audio_player.stream = track.sound
+	audio_player.bus = track.bus
+	audio_player.volume_db = track.volume
+	audio_player.play()
 
 
 #used for setting the bus volume eg. settings page with volume slider
